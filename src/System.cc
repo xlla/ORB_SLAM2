@@ -24,8 +24,11 @@
 #include "Converter.h"
 #include <thread>
 #include <pangolin/pangolin.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <stdlib.h>
 #include <iomanip>
-
+//using namespace std;
 namespace ORB_SLAM2
 {
 
@@ -59,10 +62,11 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
 
 
     //Load ORB Vocabulary
-    cout << endl << "Loading ORB Vocabulary. This could take a while..." << endl;
+    cout << endl << "Loading ORB Vocabulary. This could take a while......" << endl;
 
     mpVocabulary = new ORBVocabulary();
     bool bVocLoad = mpVocabulary->loadFromTextFile(strVocFile);
+    
     if(!bVocLoad)
     {
         cerr << "Wrong path to vocabulary. " << endl;

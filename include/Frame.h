@@ -22,7 +22,7 @@
 #define FRAME_H
 
 #include<vector>
-
+using namespace std;
 #include "MapPoint.h"
 #include "Thirdparty/DBoW2/DBoW2/BowVector.h"
 #include "Thirdparty/DBoW2/DBoW2/FeatureVector.h"

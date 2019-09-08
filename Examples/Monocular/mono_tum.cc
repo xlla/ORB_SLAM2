@@ -27,7 +27,7 @@
 #include<opencv2/core/core.hpp>
 
 #include<System.h>
-
+#define CV_LOAD_IMAGE_UNCHANGED -1
 using namespace std;
 
 void LoadImages(const string &strFile, vector<string> &vstrImageFilenames,

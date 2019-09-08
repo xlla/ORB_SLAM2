@@ -26,6 +26,7 @@
 #include<chrono>
 
 #include<opencv2/core/core.hpp>
+#define CV_LOAD_IMAGE_UNCHANGED -1
 
 #include<System.h>
 
